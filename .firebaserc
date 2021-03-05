@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-app-r4": {
+      "hosting": {
+        "test-app-r4": [
+          "test-app-r4"
+        ]
+      }
+    }
+  }
+}
