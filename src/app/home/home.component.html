@@ -1,0 +1,21 @@
+<div class="home-container">
+  <mat-card *ngIf="(user | async) as usr">
+    <mat-card-content class="home-card">
+      <img
+        class="home-face"
+        [src]="usr?.photoURL"
+        alt>
+
+      <h2 class="mat-h2">{{usr?.displayName}}</h2>
+      <h4 class="mat-h4">{{usr?.email}} ({{usr?.uid}})</h4>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-stroked-button
+        color="warn"
+        (click)="logout()">
+        Logout
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
